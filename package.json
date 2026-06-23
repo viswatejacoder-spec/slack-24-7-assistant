@@ -9,7 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@slack/bolt": "^4.7.3",
-    "dotenv": "^17.4.2"
+    "dotenv": "^17.4.2",
+    "lowdb": "^7.0.1",
+    "openai": "^6.44.0",
+    "uuid": "^14.0.1"
   }
 }
