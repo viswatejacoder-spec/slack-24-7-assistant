@@ -1,0 +1,15 @@
+{
+  "name": "slack-24-7-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered Slack bot available 24/7",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^4.7.3",
+    "dotenv": "^17.4.2"
+  }
+}
