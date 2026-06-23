@@ -12,6 +12,7 @@
     "@google/generative-ai": "^0.24.1",
     "@slack/bolt": "^4.7.3",
     "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "lowdb": "^7.0.1",
     "openai": "^6.44.0",
     "uuid": "^14.0.1"

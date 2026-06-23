@@ -2,6 +2,10 @@ require("dotenv").config();
 
 const { App } = require("@slack/bolt");
 const { processMessage } = require("./agent");
+const express = require("express");
+const server = express();
+
+const PORT = process.env.PORT || 3000;
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -81,3 +85,11 @@ app.command("/history", async ({ command, ack, respond }) => {
 
   console.log("🤖 AI Agent running");
 })();
+
+server.get("/", (req, res) => {
+  res.send("🤖 StarDance Assistant is running successfully on Railway!");
+});
+
+server.listen(PORT, () => {
+  console.log(`Web server listening on port ${PORT}`);
+});
